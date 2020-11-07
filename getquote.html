@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Craftstone Countertops Inc.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
   </head>
 
@@ -19,11 +20,15 @@
 
       <h3 class="tagline">932 Grant Ave Novato, CA | (415) 408-3921</h3>
 
-      <nav class="nav primary-nav">
+      <nav class="navbar" style="float: right; font-size: 20px; padding-right: 0px;" >
         <a href="index.html">Home</a>
+        <div class="divider"></div>
         <a href="gallery.html">Gallery</a>
+        <div class="divider"></div>
         <a href="about.html">About</a>
+        <div class="divider"></div>
         <a href="contact.html">Contact Us</a>
+        <div class="divider"></div>
         <a href="getquote.html">Get Quote</a>
       </nav>
 
@@ -31,9 +36,38 @@
 
     <!-- Main content -->
 
-    <section class="row hero container">
+    <section class="row hero container" style="display: block; overflow: auto;" >
 
-      <h1>Get Quote</h1>
+      <form  style="color:#000" name="contact" method="POST" data-netlify="true" class="form-control">
+        <p>
+          <label>Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Phone: <input type="text" name="number" /></label>
+        </p>
+        <p>
+          <label>Project location: <select class="form-control">
+            <option value="kitchen">Kitchen</option>
+            <option value="bathroom">Bathroom</option>
+            <option value="other">Other</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Other Info: <textarea class="form-control" placeholder="Desired material, aprox. sq. footage, etc." name="message"></textarea></label>
+        </p>
+        <form>
+          <div class="form-group" style="display: inline-flex;">
+            <p><label>Upload Floorplans: </label></p>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
 
     </section>
 
@@ -52,6 +86,8 @@
       </nav>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

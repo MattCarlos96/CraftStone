@@ -342,6 +342,12 @@ h1, h3, h4, h5, p {
   text-transform: uppercase;
 }
 
+.divider{
+  width:8px;
+  height:auto;
+  display:inline-block;
+}
+
 
 /*
   ========================================
