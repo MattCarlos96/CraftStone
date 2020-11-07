@@ -56,14 +56,15 @@ table {
 
 
 body {
-  color: #888;
+  background: #293f50;
+  color: #59646d;
   font-family: 'Economica', sans-serif;
 
 
 }
 
-h1, h2, h3, h4 {
-  color: #648880;
+h1, h3, h4 {
+  color: rgb(103,126,134);
 }
 
 h1 {
@@ -73,6 +74,7 @@ h1 {
 h2 {
   font-size: 24px;
   line-height: 44px;
+  color: rgb(66, 71, 73);
 }
 h3 {
   font-size: 21px;
@@ -103,15 +105,27 @@ cite, em {
 */
 
 a {
-  color: #648880;
+  color: #748a85;
   text-decoration: none;
+  margin-left: 5px;
+
 }
 a:hover {
-  color: #a9b2b9;
+  color: #748a85;
 }
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
+
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #677e86;
+}
+
 
 
 
@@ -159,11 +173,14 @@ p a {
 .grid {
   margin: 0 auto;
   width: 960px;
+  
 }
 .container {
   padding-left: 30px;
   padding-right: 30px;
+  height: 70%;
 }
+
 
 /*
   ========================================
@@ -175,6 +192,15 @@ h1, h3, h4, h5, p {
   margin-bottom: 22px;
 }
 
+.title {
+  font-size: 40px;
+}
+
+.dis {
+  color: #FFF;
+  text-align: center;
+}
+
 /*
   ========================================
   Buttons
@@ -182,21 +208,28 @@ h1, h3, h4, h5, p {
 */
 
 .btn {
-  border-radius:  5px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
-  margin: 0; 
-  
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
+
 .btn-alt {
-  color: #fff;
-  background: rgb(25, 199, 252);
-  border: 1px solid black;
+  border: 1px solid #fff;
   padding: 10px 30px;
-  text-decoration: none;
-  
-  
+  margin-top: 75px;
+  background: rgba(103,126,134, .4)
 }
+.btn-alt:hover {
+  background: #fff;
+  color: #748a85;
+}
+
 
 .btn-nav {
   color: #000;
@@ -213,10 +246,17 @@ h1, h3, h4, h5, p {
 */
 
 .hero {
+  color: #fff;
+  background: url("../images/DresGallery/IMG_1894.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: border-box; 
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
 }
+
 .hero h2 {
   font-size: 36px;
 }
@@ -226,6 +266,7 @@ h1, h3, h4, h5, p {
 }
 .teaser a:hover h3 {
   color: #a9b2b9;
+ 
 }
 
 
@@ -250,9 +291,26 @@ h1, h3, h4, h5, p {
 
 /*
   ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
+
+
+/*
+  ========================================
   Primary header
   ========================================
 */
+
+.primary-header {
+  height: 200px;
+}
 
 
 .logo {
@@ -262,13 +320,15 @@ h1, h3, h4, h5, p {
   font-weight: 100;
   letter-spacing: .5px;
   line-height: 44px;
-  padding: 40px 0 22px 0;
+  padding: 30px 0 22px 0;
   text-transform: uppercase;
+  margin: 0px;
 }
 
  
 
 .tagline {
+  font-size: 16px;
   margin: 66px 0 22px 0;
   text-align: right;
 }
@@ -276,7 +336,7 @@ h1, h3, h4, h5, p {
  
 
 .primary-nav {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
@@ -290,7 +350,7 @@ h1, h3, h4, h5, p {
 */
 
 .primary-footer {
-  color: #648880;
+  color: rgb(103,126,134);
   font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
@@ -310,5 +370,102 @@ h1, h3, h4, h5, p {
   text-align: right;
 }
 
+/*
+  ========================================
+  images
+  ========================================
+*/
 
+img {
+  width: 75%;
+  margin: 10px;
+}
 
+/*
+  ========================================
+  About Page
+  ========================================
+*/
+
+.trip {
+  display: inline-block;
+  width: 100%;
+  height: 275px;
+  border: 1px;
+  border-style: solid;
+  border-color: #59646d;
+  background-color: #fff;
+  margin: -8.5px;
+}
+
+.abt {
+  height: auto;
+  align-content: center;
+  background-color: #FFF;
+  color: rgb(103,126,134);
+  line-height: 44px;
+  padding: 15px 200px 15px 200px;
+  text-align: center;
+  width: 100%;
+}
+
+.abt-top {
+  height: 150px;
+  background: #293f50;
+  text-align: center;
+  width: 100%;
+}
+
+/*
+  ========================================
+  Contact Page
+  ========================================
+*/
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 350px;
+  /* The height is 400 pixels */
+  width: 30%;
+  /* The width is the width of the web page */
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 0px 0px 10px;
+  
+}
+
+.contact-main {
+  align-content: center;
+  background: #fff;
+  min-width: 960px;
+  padding: 0;
+  margin: 0 200px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.contact-info {
+  align-content: center;
+  text-align: center;
+  width: 608px;
+  height: 350px;
+  float: right ;
+  border-radius: 0px 10px 10px 0px;
+  line-height: 30px;
+  margin: auto;
+  border: auto;
+}
+
+.contact-info p {
+  margin: 0;
+  padding: 105px 0px;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  text-align: center;
+}
+
+.email {
+  color: blue;
+  text-decoration: none;
+}
