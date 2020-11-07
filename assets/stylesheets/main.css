@@ -193,6 +193,13 @@ h1, h3, h4, h5, p {
 }
 
 .title {
+  padding-top: 20px;
+  margin: 0px 200px 20px 200px;
+  border: rgb(130, 156, 177);
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  
+  color: #fff;
   font-size: 40px;
 }
 

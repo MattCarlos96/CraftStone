@@ -35,33 +35,35 @@
     </header>
 
     <!-- Main content -->
-
-    <section class="row hero container" style="display: block; overflow: auto;" >
-
+    <h1 class="title" style='color: #FFF; text-align: center;'>Get a personalized quote for free!</h1>
+    <section class="container" style="display: block; overflow: auto; text-align: center;" >
+      <p style="color: #FFF; padding: 0px 100px;">Please fill out your info and give us a brief discription of the project you have in mind and we will get back to you as soon as possible.</p>
       <form   style="color:#000" name="contact" method="POST" data-netlify="true" class="form-control">
         <p>
-          <label>Name: <input type="text" name="name" /></label>   
+          <label>Name: <input type="text" name="name" placeholder="Your Name"/></label>   
         </p>
         <p>
-          <label>Email: <input type="email" name="email" /></label>
+          <label>Email: <input type="email" name="email" placeholder="Your Email"/></label>
         </p>
         <p>
-          <label>Phone: <input type="text" name="number" /></label>
+          <label>Phone: <input type="text" name="number" placeholder="Your Phone Number"/></label>
         </p>
         <p>
-          <label>Project location: <select class="form-control">
+          <label style="display: inline;">Project type: <select class="form-control">
             <option value="kitchen">Kitchen</option>
             <option value="bathroom">Bathroom</option>
+            <option value="fireplace">Fireplace</option>
+            <option value="outside">Outside</option>
             <option value="other">Other</option>
           </select></label>
         </p>
         <p>
-          <label>Other Info: <textarea class="form-control" placeholder="Desired material, aprox. sq. footage, etc." name="message"></textarea></label>
+          <label style="display: inline">Additional Info: <textarea class="form-control" placeholder="Desired material, aprox. sq. footage, etc." name="message"></textarea></label>
         </p>
         
           <div class="form-group" style="display: inline-flex;">
             <p><label>Upload Floorplans: </label></p>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input type="file" class="form-control-file">
           </div>
         
         <p>
@@ -73,11 +75,11 @@
 
     <!-- Footer -->
 
-    <footer class="primary-footer container group">
+    <footer class="primary-footer navbar-right container group">
 
       <small>&copy; Craftstone Countertops Inc.</small>
 
-      <nav class="nav">
+      <nav class="mast-foot" style="float: right;">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
