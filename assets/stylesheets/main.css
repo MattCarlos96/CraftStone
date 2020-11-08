@@ -499,3 +499,9 @@ label {
   font: inherit;
 }
 
+.captcha {
+  height: 75px; 
+  width: 250px;
+  margin-left: 308.5px;
+  margin-right: 308.5px;
+}
