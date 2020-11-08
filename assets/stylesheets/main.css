@@ -502,6 +502,6 @@ label {
 .captcha {
   height: 75px; 
   width: 250px;
-  margin-left: 308.5px;
-  margin-right: 308.5px;
+  margin: 0px 290px 10px 290px;
+  
 }
