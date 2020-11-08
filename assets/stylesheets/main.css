@@ -521,7 +521,7 @@ label {
   padding-bottom: 15px;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 990px) {
   .dropdown-toggle {
     display: none;
   }
@@ -534,7 +534,7 @@ label {
   
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 990px) {
 
   .captcha {
     margin: 0px 0px 20px 0px;
