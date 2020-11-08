@@ -537,7 +537,7 @@ label {
 @media screen and (max-width: 920px) {
 
   .captcha {
-    margin: 0px;
+    margin: 0px 0px 20px 282.5px;
   }
 
   .title {
