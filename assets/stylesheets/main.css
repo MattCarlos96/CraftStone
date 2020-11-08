@@ -526,6 +526,9 @@ label {
     display: none;
   }
 
+  .footer-mobile {
+    display: none;
+  }
   
 
   
@@ -533,9 +536,26 @@ label {
 
 @media screen and (max-width: 920px) {
 
+  .title {
+    margin: 0px;
+  }
+
   .logo-mobile{
     font-weight: normal;
     font-size:28px;
+  }
+
+  .primary-footer {
+    display: none;
+  }
+  .footer-mobile{
+  color: rgb(103,126,134);
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+  font-weight: 400;
+  align-content: center;
+  text-align: center;
   }
   
   .hero {
@@ -573,9 +593,6 @@ label {
     width: auto;
   }
 
-  .mast-foot {
-    display: none;
-  }
   
   .dropdown {
     width: 80px;
