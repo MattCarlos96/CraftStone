@@ -659,7 +659,7 @@ label {
 }
 
 .contact-main {
-  width: 100%;
+  width: auto;
   display: block;
   margin: 0px;
   height: 800px;
@@ -674,7 +674,12 @@ label {
 
 .contact-info {
   padding-top: 350px;
-  padding-left: 225px;
+  align-content: center;
+  padding-left: auto;
+  position: absolute;
+  transform: translate(-20%, -10%);
+  font-size: 12px;
+  
 }
 
 
