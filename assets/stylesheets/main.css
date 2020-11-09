@@ -470,7 +470,7 @@ img {
 .contact-main {
   align-content: center;
   background: #fff;
-  min-width: 960px;
+  width: auto;
   padding: 0;
   margin: 0 200px;
   height: 350px;
@@ -656,6 +656,25 @@ label {
 
 .abt {
   padding: 15px 0px 15px 0px;
+}
+
+.contact-main {
+  width: 100%;
+  display: block;
+  margin: 0px;
+  height: 800px;
+  
+}
+
+#map {
+  width: 100%;
+  border-radius: 0px;
+  
+}
+
+.contact-info {
+  padding-top: 350px;
+  padding-left: 225px;
 }
 
 
