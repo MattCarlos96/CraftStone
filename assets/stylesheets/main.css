@@ -669,15 +669,16 @@ label {
 #map {
   width: 100%;
   border-radius: 0px;
+  position: absolute;
   
 }
 
 .contact-info {
-  padding-top: 350px;
+  margin-top: 350px;
   align-content: center;
   padding-left: auto;
-  position: absolute;
-  transform: translate(-20%, -10%);
+  position: relative;
+  transform: translate(20%, -10%);
   font-size: 12px;
   
 }
