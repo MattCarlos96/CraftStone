@@ -55,6 +55,21 @@ table {
 
 
 
+.dev-tag .dev{
+  color: #677e86;
+  text-decoration: none;
+  border: none;
+  margin-left: 0px;
+
+}
+
+.dev:hover{
+  color: white;
+  border-bottom: 0.5px white solid;
+}
+
+
+
 
 
 body {
@@ -135,7 +150,7 @@ p a {
 
 
 
-                  
+
 /*
   ========================================
   Grid
@@ -175,7 +190,7 @@ p a {
 .grid {
   margin: 0 auto;
   width: 960px;
-  
+
 }
 .container {
   padding-left: 30px;
@@ -200,7 +215,7 @@ h1, h3, h4, h5, p {
   border: rgb(130, 156, 177);
   border-width: 1px 0px 0px 0px;
   border-style: solid;
-  
+
   color: #fff;
   font-size: 40px;
 }
@@ -260,7 +275,7 @@ h1, h3, h4, h5, p {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
-  background-origin: border-box; 
+  background-origin: border-box;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
@@ -275,7 +290,7 @@ h1, h3, h4, h5, p {
 }
 .teaser a:hover h3 {
   color: #a9b2b9;
- 
+
 }
 
 
@@ -338,7 +353,7 @@ h1, h3, h4, h5, p {
   display: none;
 }
 
- 
+
 
 .tagline {
   font-size: 16px;
@@ -346,7 +361,7 @@ h1, h3, h4, h5, p {
   text-align: right;
 }
 
- 
+
 
 .primary-nav {
   font-size: 16px;
@@ -464,7 +479,7 @@ img {
   margin: 0;
   padding: 0;
   border-radius: 10px 0px 0px 10px;
-  
+
 }
 
 .contact-main {
@@ -507,17 +522,17 @@ label {
 }
 
 .captcha {
-  height: 75px; 
+  height: 75px;
   width: 250px;
   margin: 0px 282.5px 30px 282.5px;
-  
+
 }
 
 .index-title {
   border: #fff;
   border-width: 0px 0px 1px 0px;
-  border-style: solid; 
-  margin: 0px 200px 5px 200px; 
+  border-style: solid;
+  margin: 0px 200px 5px 200px;
   padding-bottom: 15px;
 }
 
@@ -529,12 +544,14 @@ label {
   .footer-mobile {
     display: none;
   }
-  
 
-  
+
+
+
 }
 
 @media screen and (max-width: 990px) {
+
 
   .captcha {
     margin: 0px 0px 20px 0px;
@@ -561,12 +578,12 @@ label {
   align-content: center;
   text-align: center;
   }
-  
+
   .hero {
-   
+
     background: url("../images/DresGallery/IMG_12.jpeg");
     background-size: 100% 100%;
-    
+
     padding: 50px 5px 60px 5px;
   }
 
@@ -585,7 +602,7 @@ label {
   .navbar {
     display: none;
   }
-  
+
   .primary-header {
     padding: 0;
     height: 60px;
@@ -597,7 +614,7 @@ label {
     width: auto;
   }
 
-  
+
   .dropdown {
     width: 80px;
   }
@@ -645,7 +662,7 @@ label {
 .grid {
   margin: 0 auto;
   width: auto;
-  
+
 }
 .container {
   padding-left: none;
@@ -663,14 +680,14 @@ label {
   display: block;
   margin: 0px;
   height: 800px;
-  
+
 }
 
 #map {
   width: 100%;
   border-radius: 0px;
   position: absolute;
-  
+
 }
 
 .contact-info {
@@ -680,8 +697,18 @@ label {
   position: relative;
   transform: translate(20%, -10%);
   font-size: 12px;
-  
+
 }
 
+.dev-tag .dev{
+  color: #677e86;
+  text-decoration: none;
+  border: none;
+  margin-left: 0px;
+}
 
+.dev:hover{
+  color: white;
+  border-bottom: 0.5px white solid;
+}
 }
